@@ -19,3 +19,5 @@ def SuperEpicMegaFunction(k):
 SuperEpicMegaFunction(int(input('\nВведите число: ')))
 
 #задача 2
+
+#задача 3
