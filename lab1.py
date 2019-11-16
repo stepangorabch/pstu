@@ -10,6 +10,9 @@ from random import random as miniRandom
 from random import uniform as megaRandom
 from math import cos
 
+
+
+#задача 1
 def task1():
     e = miniRandom()
     n = random(1,20)
@@ -32,6 +35,9 @@ def task1():
 
     print( "\nитог: \nсумма элеметов :", sum, "\nсписок элеменотов:", list1, "\nномера элеменотов:",list2)
 
+
+
+#задача 2
 def task2():
     sum1 = 0
     sum2 = 0
@@ -50,6 +56,9 @@ def task2():
         print("\n(1 ** 5 + 2**5   ...   n**5) = ", sum1, "      (1 ** 7 + 2**7  ...  n**7) = ", sum2)
         print("sum1 + sum2 = ", sum2plus, "     2*(1 + 2  ... + n)**4 = ", sum3, "\n")
 
+
+
+#задача 3
 def task3():
     x = megaRandom(-1000,1000)
     n = random(2,100)

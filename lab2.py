@@ -9,6 +9,9 @@
 
 from random import randint as random #импорт функции генерации случайных чисел
 
+
+
+#задача 1
 def task1():
     randomNumber = random(100,999)
     print(randomNumber)
@@ -22,6 +25,10 @@ def task1():
     else:
         print("Сумма цифр числа", randomNumber, "не является четным числом")
 
+
+
+
+#задача 2
 def task2():
     floor = random(10,99); print("количество этажей:", floor); print("количество квартир:", floor*3)
     flat = random(1, floor*3); print("номер случайной квартиры:", flat)
