@@ -6,9 +6,32 @@ def superMegaEpicFunctionVolume2(x):
     l = [i for i in range(1,x+1)]
     l2 = []
     print(l)
-    for i in range (1, x+1):
+    for i in range (x):
         if l[i]%2 == 0:
             l2.append(l[i])
             print(l2)
-
+            
 superMegaEpicFunctionVolume2(int(input("введите число:")))
+
+
+
+def superMegaEpicFunctionVolume3(x):
+    l = [i for i in range(1,x+1)]
+    l2 = []
+    sumVar = str(0)
+    print(l)
+    for i in range (x):
+        a = l[i]
+        print("a = ", a)
+        if a == x/2:
+            sumVar = (str(a) + " + " + str(l[i]))
+            l2.append(sumVar)
+            break   
+        for k in range(x):
+            #print("     k = ", k)
+            if (a + l[k]) == x:
+                sumVar = (str(a) + " + " + str(l[k]))
+                l2.append(sumVar)    
+    print(l2)
+
+superMegaEpicFunctionVolume3(int(input("введите число:")))
