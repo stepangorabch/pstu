@@ -10,7 +10,7 @@ def superMegaEpicFunctionVolume2(x):
         if l[i]%2 == 0:
             l2.append(l[i])
             print(l2)
-            
+
 superMegaEpicFunctionVolume2(int(input("введите число:")))
 
 
@@ -18,7 +18,7 @@ superMegaEpicFunctionVolume2(int(input("введите число:")))
 def superMegaEpicFunctionVolume3(x):
     l = [i for i in range(1,x+1)]
     l2 = []
-    sumVar = str(0)
+    sumVar = str(" ")
     print(l)
     for i in range (x):
         a = l[i]
@@ -35,3 +35,4 @@ def superMegaEpicFunctionVolume3(x):
     print(l2)
 
 superMegaEpicFunctionVolume3(int(input("введите число:")))
+
