@@ -13,8 +13,6 @@ def superMegaEpicFunctionVolume2(x):
 
 superMegaEpicFunctionVolume2(int(input("введите число:")))
 
-
-
 def superMegaEpicFunctionVolume3(x):
     l = [i for i in range(1,x+1)]
     l2 = []
