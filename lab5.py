@@ -3,8 +3,9 @@ from random import randint as random
 def matrix(x, y):
     megaList = [[random(1,99) for j in range (y)] for i in range(x)]
     minimumList = []
-    n = 0
-    m = 0
+    idList = []
+    n = 0; m = 0
+    z = 0; w = 0
     for i in range(x):
         print(megaList[i])
 
@@ -13,19 +14,23 @@ def matrix(x, y):
         for j in range(y-1):
             if megaList[i][j+1] < n:
                 n = megaList[i][j+1]
-                m = j+2
-                
+                m = j+1
+        print("\nСтрока: ", i+1, "Столбец: ", m+1)
         minimumList.append(n)
-        print("\nСтрока: ", i+1, "Столбец: ", m)
+        id = str("Строка: ") + str(i+1) + str(" Столбец: ") + str(m+1)
+        idList.append(id)
         print(minimumList)
     
-    n = minimumList[0]
+    w = minimumList[0]
     for k in range(len(minimumList)):
-        if minimumList[k] > n:
-            n = minimumList[k]
-    print("\nМаксимальный элемент из минимальных: ", n)
+        if minimumList[k] > w:
+            w = minimumList[k]
+            z = k
 
-matrix(int(input("Введите число строк: ")),int(input("Введите число столбцов: ")))
+    print("\nМаксимальный элемент из минимальных: ", w)
+    print("Номер элемента: ", idList[z])
+
+#matrix(int(input("Введите число строк: ")),int(input("Введите число столбцов: ")))
 
 def matrix2(x):
     matrixList = [[] * x for i in range(x)]
@@ -65,6 +70,36 @@ def matrix3(x, y):
     else:
         print('\n',numList)
 
-matrix3(int(input("Введите число строк: ")),int(input("Введите число столбцов: ")))
+#matrix3(int(input("Введите число строк: ")),int(input("Введите число столбцов: ")))
     
 
+def matrix4(x):
+    matrixList = [[] * x for i in range(x)]
+    iX = 0; iY = 0; n = 1; num = 1
+
+    while n != x:
+        if n%2 == 0:
+            iX = 0
+            iY = 0
+            while iX != 0:
+                matrixList[iX][iY] = num
+                num += 1
+                iX += 1
+                if iY != 0:
+                    iY -= 1
+
+        else:
+            iX = 0
+            iY = 0
+            while iY != 0:
+                matrixList[(iY-1)][iX] = num
+                num += 1
+                if iX != 0:
+                    iX -= 1
+                iY += 1
+
+        n += 1
+
+    print(matrixList)
+
+matrix4(5)
