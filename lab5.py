@@ -17,7 +17,7 @@ def matrix(x, y):
                 m = j+1
         print("\nСтрока: ", i+1, "Столбец: ", m+1)
         minimumList.append(n)
-        id = str("Строка: ") + str(i+1) + str(" Столбец: ") + str(m+1)
+        id = str("Строка: ") + str(i+1) + str(" Столбец: ") + str(m)
         idList.append(id)
         print(minimumList)
     
@@ -42,11 +42,11 @@ def matrix2(x):
     for i in range(x):
         print(matrixList[i])
 
-#matrix2(int(input("Введите число: ")))
+#matrix2(int(input("\nВведите число: ")))
 
 def matrix3(x, y):
-    D = [random(1,6) for i in range(y)]
-    A = [[random(1,3) for j in range(y)] for i in range(x)]
+    D = [random(1,2) for i in range(y)]
+    A = [[random(1,2) for j in range(y)] for i in range(x)]
     numList = []
     print(D)
     print("\n")
@@ -59,18 +59,18 @@ def matrix3(x, y):
             n = 0
             if A[i][j] == D[j]:
                 checkList.append(A[i][j])
-                n = j
+                n = i
 
         if len(checkList) == len(D):
-            numList.append(n)
-            #print('\n', checkList)
+            numList.append(n+1)
+                #print('\n', checkList)
             
     if len(numList) == 0:
         print("Одинаковых строк нет!")
     else:
         print('\n',numList)
 
-#matrix3(int(input("Введите число строк: ")),int(input("Введите число столбцов: ")))
+#matrix3(int(input("\nВведите число строк: ")),int(input("Введите число столбцов: ")))
 
 
 def matrix4(x):
@@ -136,12 +136,10 @@ def matrix4(x):
                 matrixList[idY][idX] = n
             num -= 1
 
-                
-
     print("\n")
+    for i in range(x):
+        matrixList[i].reverse()
     for i in range(len(matrixList[0])):
         print(matrixList[i])
 
-
-for i in range(1, 11):
-    matrix4(i)
+matrix4(int(input("\nВведите размер матрицы: ")))
