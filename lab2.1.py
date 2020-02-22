@@ -38,12 +38,12 @@ def task2(x):
     for i in range(len(xList)):
         point[0] = xList[i]
         point[1] = yList[i]
-        for j in range(1, len(xList)):
+        for j in range(i+1, len(xList)):
             if j == i:
                 continue
             point[2] = xList[j]
             point[3] = yList[j]
-            for k in range(2, len(xList)):
+            for k in range(j+1, len(xList)):
                 if i == k or j == k:
                     continue
                 n += 1
@@ -106,7 +106,7 @@ def task3(x):
     show(matrix)
     show_reverse(matrix)
     
-task1(10)
+#task1(10)
 task2(4)
-task3(int(input("INPUT YOUR MATRIX SIZE: ")))
+#task3(int(input("INPUT YOUR MATRIX SIZE: ")))
 

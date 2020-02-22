@@ -6,8 +6,10 @@ def show(x):
         print(x[i])
 
 def task1(long):
+
     list = [random(-100, 100) for i in range(long)]; print(list)
     list.sort(reverse = True); print(list)
+    
 task1(5)
 
 def task2(long):
