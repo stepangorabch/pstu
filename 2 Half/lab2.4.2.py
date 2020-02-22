@@ -1,5 +1,5 @@
-f = open("lab.txt", "r")
-f1 = open("lab2.txt", "a")
+f = open("assets/lab.txt", "r")
+f1 = open("assets/lab2.txt", "a")
 strF = str(f.read())
 list = []
 num = str("")

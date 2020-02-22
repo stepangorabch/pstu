@@ -1,4 +1,4 @@
-f = open("text.txt", 'r')
+f = open("assets/text.txt", 'r')
 word1 = str(f.read())
 f.close()
 symbol = input("input your symbol: ")

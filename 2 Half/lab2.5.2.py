@@ -1,5 +1,5 @@
-f1 = open('text.txt')
-f2 = open('file.txt', 'w')
+f1 = open('assets/text.txt')
+f2 = open('assets/file.txt', 'w')
 symbol = str(input("symbol: "))
 string = f1.readlines()
 
