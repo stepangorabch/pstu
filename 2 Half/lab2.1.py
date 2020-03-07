@@ -20,7 +20,8 @@ def task2(x):
     print("\n-----------TASK 2-----------")
     #xyList = [random(-10, 10) for i in range(2*x)]
     #xyList = [i for i in range(2*x)]
-    xyList = [0, 0, 0, 4, 4, 4, 4, 0, 2, 2]
+    #xyList = [0, 0, 0, 4, 4, 4, 4, 0, 2, 2]
+    #xyList = [0, 0, 0, 2, 2, 0, 4, 4, 4, 2]
     point = [0 for i in range(6)]
     long = [0 for i in range(3)]
     xList = []; yList = []
